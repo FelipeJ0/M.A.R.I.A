@@ -68,4 +68,12 @@
         app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/icons8_male_user_48" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="153dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
