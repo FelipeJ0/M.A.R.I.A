@@ -37,7 +37,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
-        android:layout_height="141dp"
+        android:layout_height="119dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -53,6 +53,7 @@
         android:id="@+id/imageView"
         android:layout_width="158dp"
         android:layout_height="140dp"
+        android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.0"
@@ -74,5 +75,21 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar_top"
         app:layout_constraintVertical_bias="0.47"
         app:srcCompat="@drawable/icons8_male_user_48" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="208dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Não educamos as crianças nas várias"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.115" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
