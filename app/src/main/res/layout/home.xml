@@ -50,15 +50,16 @@
 
     <ImageButton
         android:id="@+id/ProfileIcon"
-        android:layout_width="63dp"
-        android:layout_height="60dp"
+        android:layout_width="52dp"
+        android:layout_height="51dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="#11FFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="ícone do botão de perfil"
         android:foregroundTint="#19FFFFFF"
         android:scaleType="center"
+        android:tint="#00FFFFFF"
         android:tintMode="add"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
@@ -79,8 +80,8 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="117dp"
+        android:layout_height="110dp"
         android:background="#00FFFFFF"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
