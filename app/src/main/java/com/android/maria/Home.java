@@ -1,8 +1,10 @@
 package com.android.maria;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +24,11 @@ public class Home extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView textView = (TextView)findViewById(R.id.conecTxt);
+        Typeface font = Typeface.createFromAsset( getAssets() , "Poppins.BlackItalic");
+        textView.setTypeface(font);
+
     }
 
     public void abrir_tela_2(View v){
