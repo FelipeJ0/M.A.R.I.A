@@ -7,97 +7,80 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:background="#ff528c"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+    <View
+        android:id="@+id/BlocoBase"
+        android:layout_width="313dp"
+        android:layout_height="645dp"
+        android:background="@drawable/border_radius_view"
+        android:backgroundTint="#ff528c"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/contText"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/camp_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.416" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:background="#ff528c"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="1.0" />
+    <View
+        android:id="@+id/CiruculoBran"
+        android:layout_width="110dp"
+        android:layout_height="108dp"
+        android:background="@drawable/radius_feature"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/LogoMA"
+        app:layout_constraintEnd_toEndOf="@+id/LogoMA"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/LogoMA"
+        app:layout_constraintTop_toTopOf="@+id/LogoMA"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <ImageView
+        android:id="@+id/LogoMA"
+        android:layout_width="147dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@drawable/maria_removebg_preview" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
         android:onClick="abrir_tela_2"
         android:text="Abrir tela 2"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.644" />
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/ProfileIcon"
-        android:layout_width="52dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="ícone do botão de perfil"
-        android:foregroundTint="#19FFFFFF"
-        android:scaleType="center"
-        android:tint="#00FFFFFF"
-        android:tintMode="add"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/icons8_male_user_48" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="153dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="117dp"
-        android:layout_height="110dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        app:srcCompat="@drawable/maria_removebg_preview" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="239dp"
-        tools:srcCompat="@tools:sample/avatars" />
+    <EditText
+        android:id="@+id/CaixEmail"
+        android:layout_width="285dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginBottom="353dp"
+        android:ems="10"
+        android:hint="carlinhos@gmail...."
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/contText"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/contText"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
