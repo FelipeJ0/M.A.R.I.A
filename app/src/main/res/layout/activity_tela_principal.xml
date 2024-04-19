@@ -66,11 +66,12 @@
         android:id="@+id/imageButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_oval"
+        android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintHorizontal_bias="0.978"
         app:layout_constraintStart_toStartOf="@+id/toolbar_top"
         app:layout_constraintTop_toTopOf="@+id/toolbar_top"
         app:layout_constraintVertical_bias="0.47"
@@ -78,18 +79,63 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="208dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="-8dp"
+        android:layout_width="225dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="-16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Não educamos as crianças nas várias"
+        android:fontFamily="@font/poppins_black"
+        android:text="'Não eduques as crianças nas várias disciplinas recorrendo a força, mas como se fosse um jogo'                                                      -PLATAO"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:layout_constraintVertical_bias="0.115" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_top"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/logo_maria_4k" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_top"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_top"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/burger_bar__1_" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="340dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border_radius_view"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.894" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
