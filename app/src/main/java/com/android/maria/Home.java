@@ -25,10 +25,6 @@ public class Home extends AppCompatActivity {
             return insets;
         });
 
-        TextView textView = (TextView)findViewById(R.id.conecTxt);
-        Typeface font = Typeface.createFromAsset( getAssets() , "Poppins.BlackItalic");
-        textView.setTypeface(font);
-
     }
 
     public void abrir_tela_2(View v){

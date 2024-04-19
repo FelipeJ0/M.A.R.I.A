@@ -22,7 +22,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="212dp"
         android:onClick="abrir_tela_2"
         android:text="@string/abrir_tela_2"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
@@ -46,16 +46,50 @@
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
         app:layout_constraintVertical_bias="0.071" />
 
+    <EditText
+        style="@style/Edit_Text"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="emailAddress"
+        android:hint="@string/DSE"
+        android:inputType="text"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <EditText
+        style="@style/Edit_Text"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="password"
+        android:hint="@string/DSS"
+        android:inputType="text"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.53" />
+
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/LogWcirc"
         android:layout_width="170dp"
         android:layout_height="135dp"
+        android:contentDescription="Logo do app Maria na página de login"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
         app:layout_constraintVertical_bias="0.186"
-        app:srcCompat="@drawable/logo_maria_4k" />
+        app:srcCompat="@drawable/logo_maria_4k"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
