@@ -9,8 +9,11 @@
 
     <View
         android:id="@+id/BlocoBase"
+        style="@style/Edit_Text"
         android:layout_width="313dp"
         android:layout_height="645dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/border_radius_view"
         android:backgroundTint="#ff528c"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,12 +35,13 @@
 
     <TextView
         android:id="@+id/conecTxt"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
         android:text="Conecte-se:"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
-        android:fontFamily="@font/poppins_black"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
         app:layout_constraintHorizontal_bias="0.497"
@@ -46,7 +50,7 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/maCadLog"
         android:layout_width="170dp"
         android:layout_height="135dp"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
