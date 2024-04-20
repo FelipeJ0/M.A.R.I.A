@@ -11,7 +11,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 public class Tela_Principal extends AppCompatActivity {
 
@@ -29,11 +31,12 @@ public class Tela_Principal extends AppCompatActivity {
             return insets;
         });
 
-        calendarView = findViewById(R.id.calendarView);
+        /*calendarView = findViewById(R.id.calendarView);
         calendar = Calendar.getInstance();
 
-        setDate(1, 1, 2024);
+        setDate(3, 1, 2024);
 
+        getDate();
 
         //Adiciona a função de mudança de data conforme a inserida pelo usuário
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener()
@@ -42,9 +45,17 @@ public class Tela_Principal extends AppCompatActivity {
 
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int day) {
-                Toast.makeText(Tela_Principal.this, day + "/" + month + "/" + year, Toast.LENGTH_SHORT).show();  //o usuario recebe a mensagem do dia selecionado, exibindo o mesmo no topo do calendario"
+                Toast.makeText(Tela_Principal.this, day + "/" + month + 1 + "/" + year, Toast.LENGTH_SHORT).show();  //o usuario recebe a mensagem do dia selecionado, exibindo o mesmo no topo do calendario"
             }
         });
+    }
+
+    public void getDate(){
+        long date = calendarView.getDate();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yy", Locale.getDefault());
+        calendar.setTimeInMillis(date);
+        String selected_date = simpleDateFormat.format(calendar.getTime());
+        Toast.makeText(this, selected_date, Toast.LENGTH_SHORT).show();
     }
 
     public void setDate(int day, int month, int year) {
@@ -53,6 +64,9 @@ public class Tela_Principal extends AppCompatActivity {
         calendar.set(Calendar.DAY_OF_MONTH, day);
         long millis = calendar.getTimeInMillis();
         calendarView.setDate(millis);
+
+    }
+    */
 
     }
 }
