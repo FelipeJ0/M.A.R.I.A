@@ -121,21 +121,29 @@
         app:layout_constraintVertical_bias="0.47"
         app:srcCompat="@drawable/burger_bar__1_" />
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="340dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/border_radius_view"
+        android:background="@drawable/scrollview"
         app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
-        app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="1.0">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_radius_view" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
