@@ -4,4 +4,7 @@
     <string name="abrir_tela_2">Abrir tela 2</string>
     <string name="DSE">Digite seu Email</string>
     <string name="DSS">Digite sua senha</string>
+    <string name="Necessario">*Necessário</string>
+    <string name="Senha">Senha</string>
+    <string name="Email" translatable="false">Email</string>
 </resources>
