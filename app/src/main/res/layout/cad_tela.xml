@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".Home">
+    tools:context=".Cad_Tela">
 
     <View
         android:id="@+id/BlocoBase"
@@ -136,14 +136,14 @@
         android:text="@string/asking"
         android:textColor="#000000"
         android:textColorLink="#00FFFFFF"
-        android:textSize="16sp"
+        android:textSize="15sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.869" />
+        app:layout_constraintVertical_bias="0.855" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

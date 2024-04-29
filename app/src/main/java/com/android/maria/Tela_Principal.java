@@ -17,8 +17,8 @@ import java.util.Locale;
 
 public class Tela_Principal extends AppCompatActivity {
 
-    CalendarView calendarView; //objeto para vizualização do calendário
-    Calendar calendar;
+    //CalendarView calendarView; //objeto para vizualização do calendário
+    //Calendar calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
