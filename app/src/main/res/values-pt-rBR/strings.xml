@@ -7,5 +7,8 @@
     <string name="DSS">Digite sua senha</string>
     <string name="Necessario">Necessário</string>
     <string name="Senha">Senha</string>
+    <string name="cadastre_se">Cadastre-se:</string>
+    <string name="Nome">Nome</string>
+    <string name="asking">Já possue uma conta ? Faça o login</string>
 
 </resources>
