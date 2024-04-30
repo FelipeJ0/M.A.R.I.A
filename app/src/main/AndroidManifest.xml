@@ -13,6 +13,15 @@
         android:theme="@style/Theme.MARIA"
         tools:targetApi="34">
         <activity
+            android:name=".Log_tela"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Lista_tarefas"
             android:exported="true"
             android:label="@string/title_activity_lista_tarefas"
