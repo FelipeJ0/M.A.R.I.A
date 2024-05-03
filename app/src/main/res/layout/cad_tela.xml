@@ -53,7 +53,7 @@
         app:srcCompat="@drawable/logo_maria_4k" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputLayout"
+        android:id="@+id/EmailCamp"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -71,14 +71,14 @@
         app:startIconDrawable="@drawable/ic_email">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextInputEditText"
+            android:id="@+id/EmailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputLayout2"
+        android:id="@+id/SenhaCamp"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -96,14 +96,14 @@
         app:startIconDrawable="@drawable/ic_lock">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextInputEditText2"
+            android:id="@+id/SenhaInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputLayout3"
+        android:id="@+id/NomeCamp"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
         app:startIconDrawable="@drawable/ic_pessoa">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TextInputEditText3"
+            android:id="@+id/NomeInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black" />
@@ -144,10 +144,10 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.874" />
+        app:layout_constraintVertical_bias="0.935" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/MessageLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
@@ -158,10 +158,23 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.818" />
+        app:layout_constraintVertical_bias="0.888" />
+
+    <Button
+        android:id="@+id/CadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="@string/cadastrar"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

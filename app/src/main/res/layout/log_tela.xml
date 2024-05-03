@@ -5,5 +5,150 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E4E4E4"
-    tools:context=".Log_tela"/>
+    android:background="#FFFFFF"
+    tools:context=".Log_tela">
+
+    <View
+        android:id="@+id/BlocoBase"
+        android:layout_width="380dp"
+        android:layout_height="709dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_radius_view"
+        android:backgroundTint="#ff528c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <ImageView
+        android:id="@+id/LogWcirc"
+        android:layout_width="216dp"
+        android:layout_height="164dp"
+        android:contentDescription="Logo do app Maria na página de login"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.234"
+        app:srcCompat="@drawable/logo_maria_4k" />
+
+    <TextView
+        android:id="@+id/Logtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="@string/conecte_se"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailCamp2"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/Email"
+        app:boxBackgroundColor="@color/white"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SenhaCamp2"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/Senha"
+        app:boxBackgroundColor="@color/white"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.629"
+        app:startIconDrawable="@drawable/ic_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SenhaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/LogButtonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="@string/logar"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <TextView
+        android:id="@+id/MessageLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="@string/asking2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <Button
+        android:id="@+id/LogButton"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/poppins_black"
+        android:onClick="Cad"
+        android:text="Faça o Cadastro"
+        android:textColor="#000000"
+        android:textColorLink="#00FFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.852" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

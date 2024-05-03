@@ -11,4 +11,7 @@
     <string name="asking">Já possue uma conta ? Faça o login</string>
     <string name="Email" translatable="false">Email</string>
     <string name="title_activity_lista_tarefas">Lista_Tarefas</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="logar">Logar</string>
+    <string name="asking2">Já possui uma conta ?</string>
 </resources>

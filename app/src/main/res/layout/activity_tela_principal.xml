@@ -30,6 +30,7 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_top"
         app:layout_constraintVertical_bias="1.0" />
@@ -63,19 +64,56 @@
         app:srcCompat="@drawable/pngimg_com___children_png18057" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/perfButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/button_oval"
         android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.978"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_top"
-        app:layout_constraintVertical_bias="0.47"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_bottom"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_bottom"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/icons8_male_user_48" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_oval"
+        android:scaleType="fitStart"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/listButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_oval"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_checklist" />
 
     <TextView
         android:id="@+id/textView2"

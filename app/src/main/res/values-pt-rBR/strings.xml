@@ -9,6 +9,10 @@
     <string name="Senha">Senha</string>
     <string name="cadastre_se">Cadastre-se:</string>
     <string name="Nome">Nome</string>
-    <string name="asking">Já possue uma conta ? Faça o login</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="logar">Logar</string>
+    <string name="asking">Já possui uma conta ?</string>
+    <string name="asking2">Já possui uma conta ?</string>
+
 
 </resources>
