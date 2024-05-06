@@ -1,6 +1,8 @@
 package com.android.maria;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CalendarView;
 import android.widget.Toast;
 
@@ -30,6 +32,15 @@ public class Tela_Principal extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        }
+
+    public void TF(View view) {
+
+        //criando objeto intent para abrir tela de login
+        Intent it_Tf = new Intent(this, TelaListaTarefas.class);
+        //Iniciar tela de login
+        startActivity(it_Tf);
+    }
 
         /*calendarView = findViewById(R.id.calendarView);
         calendar = Calendar.getInstance();
@@ -68,6 +79,6 @@ public class Tela_Principal extends AppCompatActivity {
     }
     */
 
-    }
+
 }
 

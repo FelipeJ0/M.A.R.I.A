@@ -32,4 +32,12 @@ public class Log_tela extends AppCompatActivity {
         startActivity(it_CadTela);
     }
 
+    public void Tlprincipal(View v) {
+
+        //criando objeto intent para abrir tela de login
+        Intent it_Tlprincipal = new Intent(this, Tela_Principal.class);
+        //Iniciar tela de login
+        startActivity(it_Tlprincipal);
+    }
+
 }

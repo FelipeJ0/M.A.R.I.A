@@ -159,4 +159,20 @@
         app:layout_constraintVertical_bias="0.47"
         app:srcCompat="@drawable/burger_bar__1_" />
 
+    <ImageButton
+        android:id="@+id/inilistatarefas"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.944"
+        app:srcCompat="@drawable/add_circle_outline" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

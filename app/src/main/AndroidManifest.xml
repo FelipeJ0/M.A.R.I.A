@@ -21,25 +21,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".Lista_tarefas"
-            android:exported="true"
-            android:label="@string/title_activity_lista_tarefas"
-            android:theme="@style/Theme.MARIA">
+            android:name=".Tela_Principal"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
         <activity
-            android:name=".Lista_Tarefas"
-            android:exported="false"
-            android:label="@string/title_activity_lista_tarefas"
-            android:theme="@style/Theme.MARIA" />
-        <activity
-            android:name=".Tela_Principal"
-            android:exported="false" />
+            android:name=".TelaListaTarefas"
+            android:exported="true" />
+
+
         <activity
             android:name=".Cad_Tela"
             android:exported="true">
