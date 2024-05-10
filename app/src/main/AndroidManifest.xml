@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MARIA"
         tools:targetApi="34">
         <activity
+            android:name=".PerfilScreen"
+            android:exported="false" />
+        <activity
             android:name=".Log_tela"
             android:exported="true">
             <intent-filter>
@@ -21,7 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Tela_Principal"
             android:exported="true">
@@ -30,14 +32,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".TelaListaTarefas"
             android:exported="true" />
-
-
         <activity
             android:name=".Cad_Tela"
             android:exported="true">
