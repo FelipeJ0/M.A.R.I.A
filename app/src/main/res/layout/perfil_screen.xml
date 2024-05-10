@@ -7,4 +7,165 @@
     android:layout_height="match_parent"
     tools:context=".PerfilScreen">
 
+    <View
+        android:id="@+id/BlocoBase"
+        android:layout_width="437dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_radius_view"
+        android:backgroundTint="#ff528c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ff528c"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="576dp"
+        android:background="#ff528c"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_top"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/botao_perfil"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_oval"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_bottom"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_bottom"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icons8_male_user_48" />
+
+    <ImageButton
+        android:id="@+id/botao_home"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_oval"
+        android:scaleType="fitStart"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/botao_lista"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_oval"
+        android:onClick="TF"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_checklist" />
+
+    <ImageView
+        android:id="@+id/logo_maria"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_top"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/logo_maria_4k" />
+
+    <ImageButton
+        android:id="@+id/botao_inutil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_top"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_top"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/burger_bar__1_" />
+
+    <ImageView
+        android:id="@+id/imageperf"
+        android:layout_width="178dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/nomecamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="Nome:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <TextView
+        android:id="@+id/emailcamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="Email:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="316dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

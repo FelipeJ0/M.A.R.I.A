@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -64,7 +65,7 @@
         app:srcCompat="@drawable/pngimg_com___children_png18057" />
 
     <ImageButton
-        android:id="@+id/perfButton"
+        android:id="@+id/botao_perfil"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="10dp"
@@ -81,7 +82,7 @@
         app:srcCompat="@drawable/icons8_male_user_48" />
 
     <ImageButton
-        android:id="@+id/homeButton"
+        android:id="@+id/botao_home"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="30dp"
@@ -99,7 +100,7 @@
         app:srcCompat="@drawable/ic_home" />
 
     <ImageButton
-        android:id="@+id/listButton"
+        android:id="@+id/botao_lista"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="8dp"
@@ -135,7 +136,7 @@
         app:layout_constraintVertical_bias="0.115" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/logo_maria"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
@@ -147,7 +148,7 @@
         app:srcCompat="@drawable/logo_maria_4k" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/botao_inutil"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="#00FFFFFF"
