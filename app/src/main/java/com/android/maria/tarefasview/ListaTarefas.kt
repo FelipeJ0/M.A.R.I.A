@@ -1,12 +1,10 @@
 package com.android.maria.tarefasview
 
-
-import android.annotation.SuppressLint
-import android.icu.text.CaseMap.Title
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarColors
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
@@ -19,30 +17,29 @@ import com.android.maria.R
 import com.android.maria.ui.theme.PinkTP
 import com.android.maria.ui.theme.White
 
-
-@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 
 fun ListaTarefas(navController: NavController){
     Scaffold (
             topBar = {
-                androidx.compose.material.TopAppBar(
-                backgroundColor = PinkTP,
+                TopAppBar(
                         title = {
-                            Text(text = "Lista de Tarefas",
+                            Text(
+                                    text = "Lista de tarefas",
                                     fontSize = 18.sp,
                                     fontWeight = FontWeight.Bold,
-                                    color = White)
-                        }
+                                    color = White
+
+                            )
+
+                        },
+                        colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = PinkTP)
+
                 )
+    )
 
 
-
-            }
-                ){
-
-    }
 }
 
 
