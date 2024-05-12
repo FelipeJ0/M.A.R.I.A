@@ -15,12 +15,16 @@ class TelaListaTarefas : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MARIATheme {
+
+
                 // A surface container using the 'background' color from the theme
                 val navController = rememberNavController()
 
 
                 //controla a navegação entre as telas
+
                 NavHost(navController = navController, startDestination = "listaTarefa"){
+
                   composable(
                           //criada uma rota e atribuida um id a mesma
                           route = "listaTarefa"
