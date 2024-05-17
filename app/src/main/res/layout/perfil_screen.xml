@@ -177,6 +177,24 @@
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
         app:layout_constraintVertical_bias="0.499" />
 
+    <Button
+        android:id="@+id/alThemeButton"
+        android:layout_width="165dp"
+        android:layout_height="41dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/poppins_black"
+        android:onClick="Cad"
+        android:text="Alterar tema"
+        android:textColor="#000000"
+        android:textColorLink="#00FFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase" />
+
     <View
         android:id="@+id/btnArea2"
         android:layout_width="324dp"
@@ -185,10 +203,28 @@
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.715" />
+        app:layout_constraintVertical_bias="0.606" />
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="165dp"
+        android:layout_height="41dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/poppins_black"
+        android:onClick="Cad"
+        android:text="Enviar comentário"
+        android:textColor="#000000"
+        android:textColorLink="#00FFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.605" />
 
     <View
         android:id="@+id/btnArea3"
@@ -204,7 +240,7 @@
         app:layout_constraintVertical_bias="0.853" />
 
     <View
-        android:id="@+id/btnArea3"
+        android:id="@+id/btnArea4"
         android:layout_width="148dp"
         android:layout_height="42dp"
         android:background="@drawable/border_radius_view"
@@ -217,20 +253,19 @@
         app:layout_constraintVertical_bias="0.853" />
 
     <View
-        android:id="@+id/btnArea4"
+        android:id="@+id/btnArea5"
         android:layout_width="324dp"
         android:layout_height="40dp"
         android:background="@drawable/border_radius_view"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.606" />
+        app:layout_constraintVertical_bias="0.715" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/lampView"
         android:layout_width="34dp"
         android:layout_height="35dp"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
@@ -240,7 +275,7 @@
         tools:layout_editor_absoluteY="347dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/USView"
         android:layout_width="34dp"
         android:layout_height="35dp"
         android:background="#00000000"
@@ -251,7 +286,7 @@
         tools:layout_editor_absoluteY="467dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/feedView"
         android:layout_width="34dp"
         android:layout_height="35dp"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
