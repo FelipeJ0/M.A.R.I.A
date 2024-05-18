@@ -24,6 +24,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.491" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="Tlprincipal"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:tint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_seta"
+        tools:layout_editor_absoluteY="30dp" />
+
     <ImageView
         android:id="@+id/LogWcirc"
         android:layout_width="216dp"
@@ -51,7 +66,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
+        app:layout_constraintVertical_bias="0.111" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/EmailCamp2"

@@ -42,6 +42,14 @@ public class Tela_Principal extends AppCompatActivity {
         startActivity(it_Tf);
     }
 
+    public void PS(View v) {
+
+        //criando objeto intent para abrir tela de perfil
+        Intent it_TlPerfil = new Intent(this, PerfilScreen.class);
+        //Iniciar tela de login
+        startActivity(it_TlPerfil);
+    }
+
         /*calendarView = findViewById(R.id.calendarView);
         calendar = Calendar.getInstance();
 

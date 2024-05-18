@@ -72,6 +72,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/button_oval"
+        android:onClick="PS"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/toolbar_bottom"
@@ -119,21 +120,21 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="225dp"
-        android:layout_height="102dp"
+        android:layout_width="236dp"
+        android:layout_height="118dp"
         android:layout_marginStart="-16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/poppins_black"
-        android:text="'Não eduques as crianças nas várias disciplinas recorrendo a força, mas como se fosse um jogo'                                                      -PLATAO"
+        android:text="'Não eduques as crianças nas várias disciplinas recorrendo a força, mas como se fosse um jogo'                                                      -PLATÃO"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintVertical_bias="0.533" />
 
     <ImageView
         android:id="@+id/logo_maria"
@@ -160,5 +161,18 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar_top"
         app:layout_constraintVertical_bias="0.47"
         app:srcCompat="@drawable/burger_bar__1_" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginEnd="175dp"
+        android:text="A educação caminhando a passos largos !"
+        android:fontFamily="@font/poppins_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="220dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

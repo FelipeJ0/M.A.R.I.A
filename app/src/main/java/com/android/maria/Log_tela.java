@@ -26,7 +26,7 @@ public class Log_tela extends AppCompatActivity {
 
     public void Cad(View v) {
 
-        //criando objeto intent para abrir tela de login
+        //criando objeto intent para abrir tela de cadastro
         Intent it_CadTela = new Intent(this, Cad_Tela.class);
         //Iniciar tela de login
         startActivity(it_CadTela);

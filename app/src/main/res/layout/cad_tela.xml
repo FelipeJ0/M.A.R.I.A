@@ -35,10 +35,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.096" />
 
     <ImageView
         android:id="@+id/LogWcirc"
@@ -133,7 +133,7 @@
         android:layout_height="45dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/poppins_black"
-        android:onClick="Cad"
+        android:onClick="Tlog"
         android:text="Faça o Login"
         android:textColor="#000000"
         android:textColorLink="#00FFFFFF"
@@ -175,6 +175,21 @@
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.831" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="Tlprincipal"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:tint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_seta"
+        tools:layout_editor_absoluteY="30dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

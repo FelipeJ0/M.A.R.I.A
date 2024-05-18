@@ -1,6 +1,8 @@
 package com.android.maria;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,22 @@ public class PerfilScreen extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void Tlprincipal(View v) {
+
+        //criando objeto intent para abrir tela de login
+        Intent it_Tlprincipal = new Intent(this, Tela_Principal.class);
+        //Iniciar tela de login
+        startActivity(it_Tlprincipal);
+    }
+
+    public void Cad(View v) {
+
+        //criando objeto intent para abrir tela de cadastro
+        Intent it_CadTela = new Intent(this, Cad_Tela.class);
+        //Iniciar tela de login
+        startActivity(it_CadTela);
+    }
+
+
 }
