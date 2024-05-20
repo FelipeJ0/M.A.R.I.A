@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:scaleX="1"
+    android:scaleY="1.0"
     tools:context=".Cad_Tela">
 
     <View
@@ -38,7 +40,7 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.109" />
 
     <ImageView
         android:id="@+id/LogWcirc"
@@ -177,19 +179,20 @@
         app:layout_constraintVertical_bias="0.831" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
+        android:id="@+id/setaButton"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
         android:onClick="Tlprincipal"
         android:scaleX="2"
         android:scaleY="2"
-        android:tint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_seta"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
+        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/ic_seta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

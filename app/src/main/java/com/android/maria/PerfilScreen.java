@@ -26,9 +26,9 @@ public class PerfilScreen extends AppCompatActivity {
 
     public void Tlprincipal(View v) {
 
-        //criando objeto intent para abrir tela de login
+        //criando objeto intent para abrir tela principal
         Intent it_Tlprincipal = new Intent(this, Tela_Principal.class);
-        //Iniciar tela de login
+        //Iniciar tela principal
         startActivity(it_Tlprincipal);
     }
 
