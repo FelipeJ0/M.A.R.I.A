@@ -69,49 +69,7 @@ fun ListaTarefas(navController: NavController) {
         },
 
 
-        bottomBar = {
-            androidx.compose.material.BottomAppBar(
-                backgroundColor = PinkTP,
 
-            ) {
-                IconButton(onClick = { },
-
-                    ) {
-
-                    Image(
-                        modifier = Modifier.size(100.dp,100.dp),
-
-                        imageVector = ImageVector.vectorResource(id = R.drawable.ic_person),
-                        contentDescription = "Icone da tela principal",
-                        alignment = Alignment.Center,
-                        contentScale = ContentScale.Fit
-                        )
-
-                }
-
-                IconButton(onClick = { },
-                ) {
-                    Image(
-                        modifier = Modifier.size(100.dp,100.dp),
-                        imageVector = ImageVector.vectorResource(id = R.drawable.ic_home),
-                        contentDescription = "Icone da tela principal",
-                        alignment = Alignment.Center
-                    )
-
-                }
-
-                IconButton(onClick = { navController.navigate("listaTarefa")  },
-                ) {
-                    Image(
-                        modifier = Modifier.size(100.dp,100.dp),
-                        imageVector = ImageVector.vectorResource(id = R.drawable.ic_checklist),
-                        contentDescription = "Icone da tela lista de tarefas",
-                        alignment = Alignment.Center
-                    )
-
-                }
-            }
-        }
     ) {
 
 
