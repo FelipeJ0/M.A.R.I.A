@@ -132,8 +132,8 @@
 
     <ImageView
         android:id="@+id/imageperf"
-        android:layout_width="178dp"
-        android:layout_height="171dp"
+        android:layout_width="160dp"
+        android:layout_height="128dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -153,15 +153,14 @@
         android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/emailcamp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageperf" />
+        app:layout_constraintTop_toBottomOf="@+id/imageperf"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/emailcamp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/poppins_black"
         android:text="Usuário não logado ou cadastrado"
@@ -169,8 +168,10 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/btnArea"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomecamp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
 
     <View
         android:id="@+id/btnArea"
@@ -238,12 +239,11 @@
         android:id="@+id/lampView"
         android:layout_width="34dp"
         android:layout_height="35dp"
-        app:layout_constraintBottom_toBottomOf="@+id/alThemButton"
+        android:layout_marginTop="348dp"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/idea__2_" />
 
     <ImageView
@@ -268,44 +268,6 @@
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/btnArea2"
         app:srcCompat="@drawable/chat" />
-
-    <Button
-        android:id="@+id/alThemButton"
-        android:layout_width="153dp"
-        android:layout_height="40dp"
-        android:background="#00FFFFFF"
-        android:fontFamily="@font/poppins_black"
-        android:scaleX="1.4"
-        android:scaleY="1.4"
-        android:text="Alterar tema"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnArea"
-        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.395"
-        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
-        app:layout_constraintTop_toBottomOf="@+id/emailcamp"
-        app:layout_constraintVertical_bias="0.965" />
-
-    <Button
-        android:id="@+id/USButton"
-        android:layout_width="116dp"
-        android:layout_height="41dp"
-        android:background="#00FFFFFF"
-        android:fontFamily="@font/poppins_black"
-        android:scaleX="1.6"
-        android:scaleY="1.4"
-        android:text="Créditos"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnArea5"
-        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.337"
-        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
-        app:layout_constraintTop_toBottomOf="@+id/btnArea2"
-        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/deslogButton"
@@ -364,6 +326,45 @@
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toBottomOf="@+id/btnArea"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/althemeButton"
+        android:layout_width="198dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/poppins_black"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:text="Alterar Tema"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedButton"
+        app:layout_constraintEnd_toEndOf="@+id/btnArea"
+        app:layout_constraintStart_toStartOf="@+id/btnArea"
+        app:layout_constraintTop_toBottomOf="@+id/emailcamp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/AUSButton"
+        android:layout_width="198dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="37dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/poppins_black"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:text="Equipe"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnArea3"
+        app:layout_constraintEnd_toEndOf="@+id/btnArea5"
+        app:layout_constraintStart_toStartOf="@+id/btnArea5"
+        app:layout_constraintTop_toBottomOf="@+id/feedButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

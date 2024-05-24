@@ -87,7 +87,7 @@
         app:startIconDrawable="@drawable/ic_email">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/EmailInput"
+            android:id="@+id/EmailInblock"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black" />
@@ -112,7 +112,7 @@
         app:startIconDrawable="@drawable/ic_lock">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/SenhaInput"
+            android:id="@+id/Senhablock"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black" />
