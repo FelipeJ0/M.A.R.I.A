@@ -14,6 +14,8 @@ val PinkTP = Color(0xFFFF528C)
 val White = Color(0xFFFFFFFF)
 val Black = Color(0xFF000000)
 val Light_Pink = Color(0xFFEC8EAD)
+val CardBg = Color(0xFFF36C99)
+
 val Radio_Button_Green_Disabled = Color(0xFF46BE4B)
 val Radio_Button_Green_Selected = Color(0xFF318635)
 

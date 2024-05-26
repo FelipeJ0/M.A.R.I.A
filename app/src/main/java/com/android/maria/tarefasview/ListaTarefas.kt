@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.magnifier
 import androidx.compose.material.AppBarDefaults
 import androidx.compose.material.SnackbarDefaults.backgroundColor
@@ -31,6 +33,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.android.maria.R
+import com.android.maria.itemlista.TarefaItem
+import com.android.maria.model.Tarefa
 import com.android.maria.ui.theme.PinkTP
 import com.android.maria.ui.theme.White
 
@@ -66,12 +70,41 @@ fun ListaTarefas(navController: NavController) {
                     imageVector = ImageVector.vectorResource(id = R.drawable.ic_add),
                     contentDescription = "Icone de salvar tarefa")
            }
-        },
+        }
 
 
 
     ) {
 
+        val listaTarefas: MutableList<Tarefa> = mutableListOf(
+            Tarefa(
+                tarefa = "Jogar Video games",
+                descricao = "Jogar jogos",
+                prioridade = 0
+            ),
+            Tarefa(
+                tarefa = "Ir ao cinema",
+                descricao = "Assistir filmes",
+                prioridade = 1
+            ),
+            Tarefa(
+                tarefa = "Ir para a faculdade",
+                descricao = "Estudar e aprender no processo",
+                prioridade = 2
+            ),
+            Tarefa(
+                tarefa = "Limpar a casa",
+                descricao = "Limpeza de todos os cômodos das casa",
+                prioridade = 3
+            )
+        )
+
+        LazyColumn{
+            itemsIndexed(listaTarefas){
+                position, _ ->
+                TarefaItem(position, listaTarefas)
+            }
+        }
 
     }
 
