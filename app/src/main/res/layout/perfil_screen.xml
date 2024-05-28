@@ -240,6 +240,8 @@
         android:layout_width="34dp"
         android:layout_height="35dp"
         android:layout_marginTop="348dp"
+        android:layout_marginBottom="273dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"

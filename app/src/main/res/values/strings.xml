@@ -13,5 +13,5 @@
     <string name="title_activity_lista_tarefas">Lista_Tarefas</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="logar">Logar</string>
-    <string name="asking2">Já possui uma conta ?</string>
+    <string name="asking2">Não possui uma conta ?</string>
 </resources>
