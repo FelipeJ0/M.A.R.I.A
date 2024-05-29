@@ -1,6 +1,7 @@
 package com.android.maria.tarefasview
 
 import  android.annotation.SuppressLint
+import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -18,9 +19,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
@@ -28,6 +31,8 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.android.maria.componentes.Botao
 import com.android.maria.componentes.CaixaDeTexto
+import com.android.maria.constantes.Constantes
+import com.android.maria.repositorio.TarefasRepositorio
 import com.android.maria.ui.theme.PinkTP
 import com.android.maria.ui.theme.Radio_Button_Green_Disabled
 import com.android.maria.ui.theme.Radio_Button_Green_Selected
@@ -36,10 +41,17 @@ import com.android.maria.ui.theme.Radio_Button_Red_Selected
 import com.android.maria.ui.theme.Radio_Button_Yellow_Disabled
 import com.android.maria.ui.theme.Radio_Button_Yellow_Selected
 import com.android.maria.ui.theme.White
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun SalvarTarefas(navController: NavController){
+
+    val scope = rememberCoroutineScope()
+    val context = LocalContext.current
+    val tarefasRepositorio = TarefasRepositorio()
+
     androidx.compose.material.Scaffold(
         topBar = {
             androidx.compose.material.TopAppBar(
@@ -160,8 +172,32 @@ fun SalvarTarefas(navController: NavController){
             Botao(
                 onClick = {
 
+                    var mensagem = true
+
+                    scope.launch(Dispatchers.IO){
+                        if(tituloTerefa.isEmpty()){
+                            mensagem = false
+                        }
+                        else if (tituloTerefa.isNotEmpty() && descricaoTarefa.isNotEmpty() && prioridadeBaixaTarefa){
+                            tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.PRIORIDADE_BAIXA)
+                            mensagem = true
+                        }
+                    }
+
+                    scope.launch(Dispatchers.Main){
+                        if(mensagem){
+                            Toast.makeText(context, "Sucesso ao salvar a tarefa!", Toast.LENGTH_SHORT).show()
+                            navController.popBackStack()
+                        }
+                        else{
+                            Toast.makeText(context, "Título da tarefa é obrigatório", Toast.LENGTH_SHORT).show()
+                        }
+                    }
                 },
-                modifier = Modifier.fillMaxWidth().height(80.dp).padding(20.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(80.dp)
+                    .padding(20.dp),
                 texto = "Salvar")
        }
     }

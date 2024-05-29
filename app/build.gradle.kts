@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -62,6 +63,7 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+    implementation(libs.firebase.common.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -72,5 +74,8 @@ dependencies {
     implementation(libs.androidx.material)
     implementation (libs.androidx.navigation.compose)
     implementation (libs.androidx.constraintlayout.compose)
+    implementation(platform(libs.firebase.bom))
+    implementation (libs.firebase.firestore.ktx)
+
 
 }

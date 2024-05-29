@@ -37,12 +37,16 @@ import com.android.maria.itemlista.TarefaItem
 import com.android.maria.model.Tarefa
 import com.android.maria.ui.theme.PinkTP
 import com.android.maria.ui.theme.White
+import com.google.firebase.Firebase
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter", "UnusedMaterialScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 
 fun ListaTarefas(navController: NavController) {
+    Firebase
+
+
     androidx.compose.material.Scaffold (
         topBar = {
             androidx.compose.material.TopAppBar(

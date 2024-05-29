@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "950072608885",
+    "project_id": "lista-de-tarefas-30c12",
+    "storage_bucket": "lista-de-tarefas-30c12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950072608885:android:7fdd54cd4048500931103c",
+        "android_client_info": {
+          "package_name": "com.android.maria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCubKA1sJAzNa1BSNVhuT20Y2A46w1Gwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
