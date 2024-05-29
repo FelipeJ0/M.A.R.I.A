@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_top"
+        android:id="@+id/barra_superior"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#ff528c"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_bottom"
+        android:id="@+id/barra_inferior"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="576dp"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_top"
+        app:layout_constraintTop_toBottomOf="@+id/barra_superior"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
@@ -60,10 +60,10 @@
         android:background="@drawable/button_oval"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/barra_inferior"
         app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_bottom"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintStart_toStartOf="@+id/barra_inferior"
+        app:layout_constraintTop_toTopOf="@+id/barra_inferior"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/icons8_male_user_48" />
 
@@ -81,8 +81,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintStart_toStartOf="@+id/barra_superior"
+        app:layout_constraintTop_toTopOf="@+id/barra_inferior"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_home" />
 
@@ -99,8 +99,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.976"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintStart_toStartOf="@+id/barra_superior"
+        app:layout_constraintTop_toTopOf="@+id/barra_inferior"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_checklist" />
 
@@ -108,11 +108,11 @@
         android:id="@+id/logo_maria"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
+        app:layout_constraintBottom_toBottomOf="@+id/barra_superior"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_top"
+        app:layout_constraintStart_toStartOf="@+id/barra_superior"
+        app:layout_constraintTop_toTopOf="@+id/barra_superior"
         app:layout_constraintVertical_bias="0.642"
         app:srcCompat="@drawable/logo_maria_4k" />
 
@@ -122,11 +122,11 @@
         android:layout_height="30dp"
         android:background="#00FFFFFF"
         android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar_top"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar_top"
+        app:layout_constraintBottom_toBottomOf="@+id/barra_superior"
+        app:layout_constraintEnd_toEndOf="@+id/barra_superior"
         app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_top"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_top"
+        app:layout_constraintStart_toStartOf="@+id/barra_superior"
+        app:layout_constraintTop_toTopOf="@+id/barra_superior"
         app:layout_constraintVertical_bias="0.47"
         app:srcCompat="@drawable/burger_bar__1_" />
 
@@ -240,6 +240,8 @@
         android:layout_width="34dp"
         android:layout_height="35dp"
         android:layout_marginTop="348dp"
+        android:layout_marginBottom="273dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
