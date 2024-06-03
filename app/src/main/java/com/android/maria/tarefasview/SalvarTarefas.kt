@@ -133,7 +133,7 @@ fun SalvarTarefas(navController: NavController){
                modifier = Modifier.fillMaxWidth()
            ){
                 Text(text = "Nivel de prioridade")
-               
+
                RadioButton(
                    selected = prioridadeBaixaTarefa,
                    onClick = {
@@ -178,8 +178,36 @@ fun SalvarTarefas(navController: NavController){
                         if(tituloTerefa.isEmpty()){
                             mensagem = false
                         }
-                        else if (tituloTerefa.isNotEmpty() && descricaoTarefa.isNotEmpty() && prioridadeBaixaTarefa){
+                        else if(tituloTerefa.isNotEmpty() && descricaoTarefa.isNotEmpty() && prioridadeBaixaTarefa){
                             tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.PRIORIDADE_BAIXA)
+                            mensagem = true
+                        }
+                        else if(tituloTerefa.isNotEmpty() && descricaoTarefa.isNotEmpty() && prioridadeMediaTarefa){
+                            tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.PRIORIDADE_MEDIA)
+                            mensagem = true
+                        }
+                        else if(tituloTerefa.isNotEmpty() && descricaoTarefa.isNotEmpty() && prioridadeAltaTarefa){
+                            tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.PRIORIDADE_ALTA)
+                            mensagem = true
+                        }
+                        else if(tituloTerefa.isNotEmpty() && descricaoTarefa.isNotEmpty() && semPrioridadeTarefa){
+                            tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.SEM_PRIORIDADE)
+                            mensagem = true
+                        }
+                        else if(tituloTerefa.isNotEmpty() && prioridadeBaixaTarefa){
+                            tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.PRIORIDADE_BAIXA)
+                            mensagem = true
+                        }
+                        else if(tituloTerefa.isNotEmpty() && prioridadeMediaTarefa){
+                            tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.PRIORIDADE_MEDIA)
+                            mensagem = true
+                        }
+                        else if(tituloTerefa.isNotEmpty() && prioridadeAltaTarefa){
+                            tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.PRIORIDADE_ALTA)
+                            mensagem = true
+                        }
+                        else {
+                            tarefasRepositorio.salvarTarefa(tituloTerefa, descricaoTarefa, Constantes.SEM_PRIORIDADE)
                             mensagem = true
                         }
                     }

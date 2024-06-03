@@ -47,7 +47,7 @@ fun ListaTarefas(navController: NavController) {
     Firebase
 
 
-    androidx.compose.material.Scaffold (
+    androidx.compose.material.Scaffold(
         topBar = {
             androidx.compose.material.TopAppBar(
                 backgroundColor = PinkTP,
@@ -64,22 +64,24 @@ fun ListaTarefas(navController: NavController) {
 
         backgroundColor = White,
         floatingActionButton = {
-           androidx.compose.material.FloatingActionButton(onClick = {
-               navController.navigate("salvarTarefa")
+            androidx.compose.material.FloatingActionButton(
+                onClick = {
+                    navController.navigate("salvarTarefa")
 
-           },
-               backgroundColor = PinkTP
-               ) {
+                },
+                backgroundColor = PinkTP
+            ) {
                 Image(
                     imageVector = ImageVector.vectorResource(id = R.drawable.ic_add),
-                    contentDescription = "Icone de salvar tarefa")
-           }
+                    contentDescription = "Icone de salvar tarefa"
+                )
+            }
         }
-
 
 
     ) {
 
+        /*
         val listaTarefas: MutableList<Tarefa> = mutableListOf(
             Tarefa(
                 tarefa = "Jogar Video games",
@@ -103,11 +105,20 @@ fun ListaTarefas(navController: NavController) {
             )
         )
 
-        LazyColumn{
+        */
+
+        LazyColumn {
+
+            /*
             itemsIndexed(listaTarefas){
                 position, _ ->
                 TarefaItem(position, listaTarefas)
             }
+             */
+
+
+
+
         }
 
     }
