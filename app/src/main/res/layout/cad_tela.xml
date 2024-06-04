@@ -173,10 +173,10 @@
         android:text="@string/cadastrar"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.843" />
 
     <ImageButton
         android:id="@+id/setaButton"
