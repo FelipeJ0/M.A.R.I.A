@@ -7,17 +7,20 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Cad_Tela extends AppCompatActivity {
 
     private com.google.android.material.textfield.TextInputEditText Nomeblock, Emailblock, Senhablock;
     private Button CadButton;
+
     //armazena as mensagens de sucesso e erro
     String[] mensagens = {"Por favor, preencha todos os campos", "Cadastro realizado com sucesso !"};
 
@@ -33,27 +36,37 @@ public class Cad_Tela extends AppCompatActivity {
         //verificar se os campos estão preenchidos
         CadButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
+            public void onClick(View v) {
                 String nome = Nomeblock.getText().toString();
                 String email = Emailblock.getText().toString();
                 String senha = Senhablock.getText().toString();
 
+                //mostrar uma mensagem caso algum dos campos não esteja preenchido
                 if (nome.isEmpty() || email.isEmpty() || senha.isEmpty()) {
-                    Snackbar snackbar = Snackbar.make(view, mensagens[0], Snackbar.LENGTH_SHORT);
+                    Snackbar snackbar = Snackbar.make(v, mensagens[0], Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
-
+                }else {
+                    CadastrarUsuarios(v);
                 }
             }
         });
+    }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-
+    private void CadastrarUsuarios(View v){
+        String email = Emailblock.getText().toString();
+        String senha = Senhablock.getText().toString();
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    Snackbar snackbar = Snackbar.make(v, mensagens[1], Snackbar.LENGTH_SHORT);
+                    snackbar.setBackgroundTint(Color.WHITE);
+                    snackbar.setTextColor(Color.BLACK);
+                    snackbar.show();
+                }
+            }
         });
 
     }
@@ -65,6 +78,11 @@ public class Cad_Tela extends AppCompatActivity {
         Senhablock = findViewById(R.id.Senhablock);
         CadButton = findViewById(R.id.CadButton);
     }
+
+
+
+
+    //S E P A R A Ç Ã O
 
     public void Cad(View v){
         //criando objeto intent para abrir tela principal
