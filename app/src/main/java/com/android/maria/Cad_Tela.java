@@ -84,6 +84,8 @@ public class Cad_Tela extends AppCompatActivity {
 
     //S E P A R A Ç Ã O
 
+    //TESTE
+
     public void Cad(View v){
         //criando objeto intent para abrir tela principal
         //Intent it_telaPrincipal = new Intent(this, Tela_Principal.class);
