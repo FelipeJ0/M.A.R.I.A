@@ -3,6 +3,7 @@ package com.android.maria;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,10 +12,21 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Cad_Tela extends AppCompatActivity {
 
@@ -23,6 +35,7 @@ public class Cad_Tela extends AppCompatActivity {
 
     //armazena as mensagens de sucesso e erro
     String[] mensagens = {"Por favor, preencha todos os campos", "Cadastro realizado com sucesso !"};
+    String usuarioID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,14 +74,64 @@ public class Cad_Tela extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+
+                    //Método responsável por salvar o nome do usuário no banco
+                    SalvarDadosUsuario();
+
                     Snackbar snackbar = Snackbar.make(v, mensagens[1], Snackbar.LENGTH_SHORT);
+                    snackbar.setBackgroundTint(Color.WHITE);
+                    snackbar.setTextColor(Color.BLACK);
+                    snackbar.show();
+                }
+                else {
+                    String erro;
+
+                    //Criando as excessões no momento do cadastro
+                    try {
+                        throw task.getException();
+                    } catch (FirebaseAuthWeakPasswordException e) {
+                        erro = "Digite uma senha com no mínimo 6 caracteres";
+                    } catch (FirebaseAuthUserCollisionException e) {
+                        erro = "Esta conta já foi cadastrada";
+                    } catch (FirebaseAuthInvalidCredentialsException e) {
+                        erro = "Email inválido";
+                    } catch (Exception e) {
+                        erro = "Erro ao cadastrar usuário";
+                    }
+                    Snackbar snackbar = Snackbar.make(v, erro, Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
                 }
             }
         });
+    }
 
+    private void SalvarDadosUsuario(){
+        String nome = Nomeblock.getText().toString();
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        Map<String,Object> usuarios = new HashMap<>();
+        usuarios.put("nome", nome);
+
+        //Obter o ID do usuário atual
+        usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        DocumentReference documentReference = db.collection("Usuário").document(usuarioID);
+        documentReference.set(usuarios).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void unused) {
+                Log.d("db", "Sucesso ao salvar os dados");
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.d("db_error", "Erro ao salvar os dados" + e.toString());
+                    }
+                });
     }
 
     //associando os objetos aos seus respectivos ids
@@ -80,11 +143,8 @@ public class Cad_Tela extends AppCompatActivity {
     }
 
 
-
-
     //S E P A R A Ç Ã O
 
-    //TESTE
 
     public void Cad(View v){
         //criando objeto intent para abrir tela principal

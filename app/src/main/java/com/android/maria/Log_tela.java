@@ -24,6 +24,10 @@ public class Log_tela extends AppCompatActivity {
         });
     }
 
+
+    //S E P A R A Ç Ã O
+
+
     public void Cad(View v) {
 
         //criando objeto intent para abrir tela de cadastro
