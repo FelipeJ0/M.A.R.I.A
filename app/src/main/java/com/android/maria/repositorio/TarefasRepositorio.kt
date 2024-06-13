@@ -1,6 +1,8 @@
 package com.android.maria.repositorio
 
 import com.android.maria.datasource.DataSource
+import com.android.maria.model.Tarefa
+import kotlinx.coroutines.flow.Flow
 
 class TarefasRepositorio{
 
@@ -10,5 +12,14 @@ class TarefasRepositorio{
 
         datasource.salvarTarefa(tarefa,descricao,prioridade)
 
+    }
+
+    //retorna a lista pronta, presente no banco de dados
+    fun recuperarTarefas(): Flow<MutableList<Tarefa>>{
+        return datasource.recuperarTarefas()
+    }
+
+    fun deletarTarefa(tarefa: String){
+        datasource.deletarTarefa(tarefa)
     }
 }

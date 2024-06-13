@@ -20,10 +20,12 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarColors
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
@@ -35,6 +37,7 @@ import androidx.navigation.NavController
 import com.android.maria.R
 import com.android.maria.itemlista.TarefaItem
 import com.android.maria.model.Tarefa
+import com.android.maria.repositorio.TarefasRepositorio
 import com.android.maria.ui.theme.PinkTP
 import com.android.maria.ui.theme.White
 import com.google.firebase.Firebase
@@ -44,8 +47,10 @@ import com.google.firebase.Firebase
 @Composable
 
 fun ListaTarefas(navController: NavController) {
-    Firebase
 
+
+    val tarefasRepositorio = TarefasRepositorio()
+    val context = LocalContext.current
 
     androidx.compose.material.Scaffold(
         topBar = {
@@ -107,7 +112,13 @@ fun ListaTarefas(navController: NavController) {
 
         */
 
+        val listaTarefas = tarefasRepositorio.recuperarTarefas().collectAsState(mutableListOf()).value
+
         LazyColumn {
+
+            itemsIndexed(listaTarefas){position, _, ->
+                TarefaItem(position = position, listaTarefas = listaTarefas, context = context, navController = navController)
+            }
 
             /*
             itemsIndexed(listaTarefas){
