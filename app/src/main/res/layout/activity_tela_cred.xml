@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_Cred">
+
+    <TextView
+        android:id="@+id/textRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium_italic"
+        android:text=" ''A todos que fizeram parte desse projeto, obrigado por tudo, vocês são demais'' "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/pilares"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginEnd="175dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="Créditos ao time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <View
+        android:id="@+id/blocPi4"
+        android:layout_width="330dp"
+        android:layout_height="391dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/border_radius_view"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/barra_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_superior"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/nomecamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="-Felipe Pereira Romão"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/nomecamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="-Guilherme Salgado Cardoso"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <TextView
+        android:id="@+id/nomecamp"
+        android:layout_width="265dp"
+        android:layout_height="59dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="-Diego Felipe dos Santos Gomes Junior"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <TextView
+        android:id="@+id/nomecamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium_italic"
+        android:text="Backend e frontend"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:id="@+id/nomecamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium_italic"
+        android:text="Slides/Design"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <TextView
+        android:id="@+id/nomecamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium_italic"
+        android:text="Documentação"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+    <TextView
+        android:id="@+id/nomecamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="-Gustavo de Oliveira Sampaio"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/barra_inferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="576dp"
+        android:background="#ff528c"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_superior"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/botao_perfil"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_oval"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/barra_inferior"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="@+id/barra_inferior"
+        app:layout_constraintTop_toTopOf="@+id/barra_inferior"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icons8_male_user_48" />
+
+    <ImageButton
+        android:id="@+id/botao_home"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_oval"
+        android:onClick="Tlprincipal"
+        android:outlineAmbientShadowColor="@color/black"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/barra_superior"
+        app:layout_constraintTop_toTopOf="@+id/barra_inferior"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/botao_lista"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_oval"
+        android:onClick="TF"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="@+id/barra_superior"
+        app:layout_constraintTop_toTopOf="@+id/barra_inferior"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_checklist" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/barra_superior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ff528c"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/botao_inutil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/barra_superior"
+        app:layout_constraintEnd_toEndOf="@+id/barra_superior"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/barra_superior"
+        app:layout_constraintTop_toTopOf="@+id/barra_superior"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/burger_bar__1_" />
+
+    <ImageView
+        android:id="@+id/logo_maria"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/barra_superior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/barra_superior"
+        app:layout_constraintTop_toTopOf="@+id/barra_superior"
+        app:srcCompat="@drawable/logo_maria_4k" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

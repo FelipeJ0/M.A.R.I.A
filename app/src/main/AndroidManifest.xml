@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MARIA"
         tools:targetApi="34">
         <activity
+            android:name=".Tela_Cred"
+            android:exported="false" />
+        <activity
             android:name=".PerfilScreen"
             android:exported="false" />
         <activity

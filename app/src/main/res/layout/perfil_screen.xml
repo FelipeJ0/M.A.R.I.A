@@ -202,26 +202,13 @@
         android:layout_width="150dp"
         android:layout_height="39dp"
         android:background="@drawable/border_radius_view"
-        android:backgroundTint="#6C1468"
+        android:backgroundTint="#5B2975"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.853" />
-
-    <View
-        android:id="@+id/btnArea3"
-        android:layout_width="150dp"
-        android:layout_height="39dp"
-        android:background="@drawable/border_radius_view"
-        android:backgroundTint="#BE64ED"
-        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
-        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.899"
-        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
-        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.854" />
+        app:layout_constraintVertical_bias="0.863" />
 
     <View
         android:id="@+id/btnArea5"
@@ -274,8 +261,8 @@
 
     <Button
         android:id="@+id/deslogButton"
-        android:layout_width="148dp"
-        android:layout_height="38dp"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/poppins_black"
         android:onClick="Cad"
@@ -283,19 +270,19 @@
         android:scaleY="1.3"
         android:text="Nova Seção"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnArea3"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnArea2"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
-        app:layout_constraintTop_toBottomOf="@+id/USView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/btnArea2" />
 
     <Button
         android:id="@+id/newSecButton"
         android:layout_width="148dp"
         android:layout_height="38dp"
+        android:layout_marginTop="44dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/poppins_black"
         android:onClick="Cad"
@@ -305,57 +292,36 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnArea3"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toBottomOf="@+id/USView"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/feedButton"
-        android:layout_width="198dp"
-        android:layout_height="42dp"
-        android:background="#00FFFFFF"
-        android:fontFamily="@font/poppins_black"
-        android:scaleX="1.3"
-        android:scaleY="1.3"
-        android:text="Enviar comentário"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnArea2"
-        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
-        app:layout_constraintTop_toBottomOf="@+id/btnArea"
-        app:layout_constraintVertical_bias="1.0" />
+        app:rippleColor="#6B23DF" />
 
     <Button
         android:id="@+id/althemeButton"
-        android:layout_width="198dp"
-        android:layout_height="42dp"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
         android:layout_marginTop="55dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="1dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/poppins_black"
         android:scaleX="1.3"
         android:scaleY="1.3"
-        android:text="Alterar Tema"
+        android:text="Dicas"
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/feedButton"
+        app:layout_constraintBottom_toBottomOf="@+id/btnArea"
         app:layout_constraintEnd_toEndOf="@+id/btnArea"
+        app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="@+id/btnArea"
         app:layout_constraintTop_toBottomOf="@+id/emailcamp"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.833" />
 
     <Button
         android:id="@+id/AUSButton"
-        android:layout_width="198dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="37dp"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/poppins_black"
         android:scaleX="1.3"
@@ -364,10 +330,11 @@
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnArea3"
+        app:layout_constraintBottom_toBottomOf="@+id/btnArea5"
         app:layout_constraintEnd_toEndOf="@+id/btnArea5"
+        app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="@+id/btnArea5"
-        app:layout_constraintTop_toBottomOf="@+id/feedButton" />
+        app:layout_constraintTop_toTopOf="@+id/btnArea5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
