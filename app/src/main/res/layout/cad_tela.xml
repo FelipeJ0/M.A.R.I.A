@@ -146,7 +146,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.93" />
+        app:layout_constraintVertical_bias="0.923" />
 
     <TextView
         android:id="@+id/MessageLog"
@@ -160,10 +160,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.888" />
+        app:layout_constraintVertical_bias="0.875" />
 
     <Button
         android:id="@+id/CadButton"
