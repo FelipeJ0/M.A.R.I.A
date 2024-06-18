@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
@@ -8,6 +8,9 @@
     android:layout_height="match_parent"
     tools:context=".Tela_Principal">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/barra_superior"
         android:layout_width="0dp"
@@ -36,67 +39,64 @@
         app:layout_constraintTop_toBottomOf="@+id/barra_superior"
         app:layout_constraintVertical_bias="1.0" />
 
-    <View
-        android:id="@+id/ContRecom"
-        android:layout_width="378dp"
-        android:layout_height="186dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/border_radius_view"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/barra_inferior"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barra_superior"
-        app:layout_constraintVertical_bias="0.765" />
+        <View
+            android:id="@+id/ContRecom"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/border_radius_view"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/barra_inferior"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_superior"
+            app:layout_constraintVertical_bias="0.761" />
 
-    <TextView
-        android:id="@+id/recName"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="179dp"
-        android:layout_marginEnd="175dp"
-        android:fontFamily="@font/poppins_light"
-        android:text="Esqueceram de mim"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.812"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
+        <TextView
+            android:id="@+id/recName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Esqueceram de mim"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/ContRecom"
+            app:layout_constraintEnd_toEndOf="@+id/ContRecom"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintStart_toEndOf="@+id/playIcon"
+            app:layout_constraintTop_toTopOf="@+id/ContRecom"
+            app:layout_constraintVertical_bias="0.076" />
 
-    <TextView
-        android:id="@+id/disPlat"
-        android:layout_width="100dp"
-        android:layout_height="20dp"
-        android:fontFamily="@font/poppins_black"
-        android:text="Disponível em:"
-        android:textColor="@color/white"
-        android:textSize="10sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757" />
+        <TextView
+            android:id="@+id/disPlat"
+            android:layout_width="86dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/poppins_black"
+            android:text="Disponível em:"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/ContRecom"
+            app:layout_constraintEnd_toEndOf="@+id/ContRecom"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toEndOf="@+id/recImage"
+            app:layout_constraintTop_toBottomOf="@+id/recText"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/playIcon"
-        android:layout_width="35dp"
-        android:layout_height="30dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589"
-        app:srcCompat="@drawable/botao_play" />
+        <ImageView
+            android:id="@+id/playIcon"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/recImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="@+id/ContRecom"
+            app:layout_constraintTop_toTopOf="@+id/ContRecom"
+            app:layout_constraintVertical_bias="0.589"
+            app:srcCompat="@drawable/botao_play" />
 
     <TextView
         android:id="@+id/textRec"
@@ -114,50 +114,50 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.529" />
 
-    <ImageView
-        android:id="@+id/disPlatImage"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765"
-        app:srcCompat="@drawable/disney_plus_icon_161064" />
+        <ImageView
+            android:id="@+id/disPlatImage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/ContRecom"
+            app:layout_constraintEnd_toEndOf="@+id/ContRecom"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/disPlat"
+            app:layout_constraintTop_toBottomOf="@+id/recText"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/disney_plus_icon_161064" />
 
-    <TextView
-        android:id="@+id/recText"
-        android:layout_width="238dp"
-        android:layout_height="88dp"
-        android:fontFamily="@font/poppins_black"
-        android:text="Esqueceram de Mim é recomendado para crianças por sua combinação de humor divertido, uma história emocionante e um protagonista cativante, proporcionando uma experiência cinematográfica envolvente e educativa para os espectadores mais jovens."
-        android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="9sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.786"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        <TextView
+            android:id="@+id/recText"
+            android:layout_width="238dp"
+            android:layout_height="88dp"
+            android:fontFamily="@font/poppins_black"
+            android:text="Esqueceram de Mim é recomendado para crianças por sua combinação de humor divertido, uma história emocionante e um protagonista cativante, proporcionando uma experiência cinematográfica envolvente e educativa para os espectadores mais jovens."
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/ContRecom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintStart_toEndOf="@+id/recImage"
+            app:layout_constraintTop_toTopOf="@+id/ContRecom"
+            app:layout_constraintVertical_bias="0.693" />
 
-    <ImageView
-        android:id="@+id/recImage"
-        android:layout_width="102dp"
-        android:layout_height="125dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723"
-        app:srcCompat="@drawable/_0287484" />
+        <ImageView
+            android:id="@+id/recImage"
+            android:layout_width="102dp"
+            android:layout_height="125dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/ContRecom"
+            app:layout_constraintEnd_toEndOf="@+id/ContRecom"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="@+id/ContRecom"
+            app:layout_constraintTop_toTopOf="@+id/ContRecom"
+            app:layout_constraintVertical_bias="0.836"
+            app:srcCompat="@drawable/_0287484" />
 
-    <View
+        <View
         android:id="@+id/platContainer"
         android:layout_width="0dp"
         android:layout_height="119dp"
@@ -473,50 +473,50 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.369" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="80dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888"
-        app:srcCompat="@drawable/pngegg" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ContRecom"
+            app:layout_constraintVertical_bias="0.238"
+            app:srcCompat="@drawable/pngegg" />
 
-    <TextView
-        android:id="@+id/tipText1"
-        android:layout_width="160dp"
-        android:layout_height="23dp"
-        android:fontFamily="@font/poppins_black"
-        android:text=" 'Um filho obediente...' "
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        <TextView
+            android:id="@+id/tipText1"
+            android:layout_width="160dp"
+            android:layout_height="23dp"
+            android:fontFamily="@font/poppins_black"
+            android:text=" 'Um filho obediente...' "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ContRecom"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/tipText1"
-        android:layout_width="170dp"
-        android:layout_height="23dp"
-        android:fontFamily="@font/poppins_black"
-        android:text="'é um filho bem educado' "
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.539"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.921" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tipText2"
+            android:layout_width="170dp"
+            android:layout_height="23dp"
+            android:fontFamily="@font/poppins_black"
+            android:text="'é um filho bem educado' "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/barra_inferior"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.539"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
