@@ -1,6 +1,8 @@
 package com.android.maria;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,29 @@ public class Tela_Cred extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void Tlprincipal(View v) {
+
+        //criando objeto intent para abrir tela principal
+        Intent it_Tlprincipal = new Intent(this, Tela_Principal.class);
+        //Iniciar tela principal
+        startActivity(it_Tlprincipal);
+    }
+
+    public void TF(View view) {
+
+        //criando objeto intent para abrir tela de login
+        Intent it_Tf = new Intent(this, TelaListaTarefas.class);
+        //Iniciar tela de login
+        startActivity(it_Tf);
+    }
+
+    public void PS(View v) {
+
+        //criando objeto intent para abrir tela de perfil
+        Intent it_TlPerfil = new Intent(this, PerfilScreen.class);
+        //Iniciar tela de login
+        startActivity(it_TlPerfil);
     }
 }

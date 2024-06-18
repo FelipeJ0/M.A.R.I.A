@@ -5,10 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".Tela_Cred">
 
     <TextView
-        android:id="@+id/textRec"
+        android:id="@+id/agrad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium_italic"
@@ -22,10 +23,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintVertical_bias="0.829" />
 
     <TextView
-        android:id="@+id/pilares"
+        android:id="@+id/credTit"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
@@ -44,7 +45,7 @@
         app:layout_constraintVertical_bias="0.136" />
 
     <View
-        android:id="@+id/blocPi4"
+        android:id="@+id/holder"
         android:layout_width="330dp"
         android:layout_height="391dp"
         android:layout_marginStart="15dp"
@@ -60,7 +61,7 @@
         app:layout_constraintVertical_bias="0.35" />
 
     <TextView
-        android:id="@+id/nomecamp"
+        android:id="@+id/nomecamp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_black"
@@ -75,7 +76,7 @@
         app:layout_constraintVertical_bias="0.32" />
 
     <TextView
-        android:id="@+id/nomecamp"
+        android:id="@+id/nomecamp4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_black"
@@ -90,7 +91,7 @@
         app:layout_constraintVertical_bias="0.644" />
 
     <TextView
-        android:id="@+id/nomecamp"
+        android:id="@+id/nomecamp3"
         android:layout_width="265dp"
         android:layout_height="59dp"
         android:fontFamily="@font/poppins_black"
@@ -105,7 +106,22 @@
         app:layout_constraintVertical_bias="0.51" />
 
     <TextView
-        android:id="@+id/nomecamp"
+        android:id="@+id/nomecamp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="-Gustavo de Oliveira Sampaio"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <TextView
+        android:id="@+id/bf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium_italic"
@@ -120,7 +136,7 @@
         app:layout_constraintVertical_bias="0.269" />
 
     <TextView
-        android:id="@+id/nomecamp"
+        android:id="@+id/sd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium_italic"
@@ -135,7 +151,7 @@
         app:layout_constraintVertical_bias="0.445" />
 
     <TextView
-        android:id="@+id/nomecamp"
+        android:id="@+id/doc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium_italic"
@@ -147,21 +163,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.601" />
-
-    <TextView
-        android:id="@+id/nomecamp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_black"
-        android:text="-Gustavo de Oliveira Sampaio"
-        android:textColor="@color/white"
-        android:textSize="19sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.362" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/barra_inferior"
@@ -186,6 +187,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/button_oval"
+        android:onClick="PS"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/barra_inferior"

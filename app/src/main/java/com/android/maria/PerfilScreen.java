@@ -40,5 +40,13 @@ public class PerfilScreen extends AppCompatActivity {
         startActivity(it_CadTela);
     }
 
+    public void CS(View v) {
+
+        //criando objeto intent para abrir tela de créditos
+        Intent CScreen = new Intent(this, Tela_Cred.class);
+        //Iniciar tela de créditos
+        startActivity(CScreen);
+    }
+
 
 }
