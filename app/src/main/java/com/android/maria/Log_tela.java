@@ -25,6 +25,10 @@ public class Log_tela extends AppCompatActivity {
     private Button LogButton;
     String[] mensagens = {"Por favor, preencha todos os campos", "Login efetuado com sucesso !"};
 
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +42,10 @@ public class Log_tela extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
+        // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 
         LogButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,10 +62,13 @@ public class Log_tela extends AppCompatActivity {
                 }else {
                     AutenticarUsuario(view);
                 }
-
             }
         });
     }
+
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 
     private void AutenticarUsuario(View view) {
         String email = EmailInBlock.getText().toString();
@@ -68,7 +79,21 @@ public class Log_tela extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+
+                    PS();
                     Snackbar snackbar = Snackbar.make(view, mensagens[1], Snackbar.LENGTH_SHORT);
+                    snackbar.setBackgroundTint(Color.WHITE);
+                    snackbar.setTextColor(Color.BLACK);
+                    snackbar.show();
+                } else {
+                    String erro;
+
+                    try {
+                        throw task.getException();
+                    } catch (Exception e) {
+                        erro = "Erro ao logar usuário";
+                    }
+                    Snackbar snackbar = Snackbar.make(view, erro, Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
@@ -77,6 +102,10 @@ public class Log_tela extends AppCompatActivity {
         });
     }
 
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
     private void IniciarComponentes() {
         EmailInBlock = findViewById(R.id.EmailInblock);
         Senhablock = findViewById(R.id.Senhablock);
@@ -84,7 +113,7 @@ public class Log_tela extends AppCompatActivity {
     }
 
 
-    //S E P A R A Ç Ã O
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
     public void Cad(View v) {
@@ -95,7 +124,7 @@ public class Log_tela extends AppCompatActivity {
         startActivity(it_CadTela);
     }
 
-    public void Tlprincipal(View v) {
+    public void Tlprincipal() {
 
         //criando objeto intent para abrir tela de login
         Intent it_Tlprincipal = new Intent(this, Tela_Principal.class);
@@ -103,4 +132,11 @@ public class Log_tela extends AppCompatActivity {
         startActivity(it_Tlprincipal);
     }
 
+    public void PS() {
+
+        //criando objeto intent para abrir tela de perfil
+        Intent it_TlPerfil = new Intent(this, PerfilScreen.class);
+        //Iniciar tela de login
+        startActivity(it_TlPerfil);
+    }
 }

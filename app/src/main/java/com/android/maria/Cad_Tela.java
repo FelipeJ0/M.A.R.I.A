@@ -37,13 +37,17 @@ public class Cad_Tela extends AppCompatActivity {
     String[] mensagens = {"Por favor, preencha todos os campos", "Cadastro realizado com sucesso !"};
     String usuarioID;
 
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.cad_tela);
 
-        //iniciando o método IniciarComponentes
+        //associar os campos aos seus respectivos ids
         IniciarComponentes();
 
         //verificar se os campos estão preenchidos
@@ -61,12 +65,18 @@ public class Cad_Tela extends AppCompatActivity {
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
                 }else {
+                    //se os campos estiverem preenchidos, o usuário é cadastrado
                     CadastrarUsuarios(v);
                 }
             }
         });
     }
 
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    //objeto para coletar o que foi digitado nos campos de email e senha
     private void CadastrarUsuarios(View v){
         String email = Emailblock.getText().toString();
         String senha = Senhablock.getText().toString();
@@ -75,9 +85,9 @@ public class Cad_Tela extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
 
-                    //Método responsável por salvar o nome do usuário no banco
+                    //caso tudo ocorra sem problemas, o usuário é cadastrado e será exibido uma mensagem
                     SalvarDadosUsuario();
-
+                    Tlog();
                     Snackbar snackbar = Snackbar.make(v, mensagens[1], Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
@@ -86,7 +96,7 @@ public class Cad_Tela extends AppCompatActivity {
                 else {
                     String erro;
 
-                    //Criando as excessões no momento do cadastro
+                    //criando as excessões no momento do cadastro
                     try {
                         throw task.getException();
                     } catch (FirebaseAuthWeakPasswordException e) {
@@ -107,6 +117,11 @@ public class Cad_Tela extends AppCompatActivity {
         });
     }
 
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    //objeto que coleta o nome do usuário
     private void SalvarDadosUsuario(){
         String nome = Nomeblock.getText().toString();
 
@@ -118,10 +133,13 @@ public class Cad_Tela extends AppCompatActivity {
         //Obter o ID do usuário atual
         usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
+        //cria uma collection que irá armazenar o nome do usuário cadastrado
         DocumentReference documentReference = db.collection("Usuário").document(usuarioID);
         documentReference.set(usuarios).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
+
+                //se tudo der certo, uma mensagem de sucesso será exibida no console do Android Studio
                 Log.d("db", "Sucesso ao salvar os dados");
 
             }
@@ -129,10 +147,16 @@ public class Cad_Tela extends AppCompatActivity {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+
+                        //se algum erro ocorrer, uma mensagem de erro e exibida no console do Android Studio
                         Log.d("db_error", "Erro ao salvar os dados" + e.toString());
                     }
                 });
     }
+
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 
     //associando os objetos aos seus respectivos ids
     private void IniciarComponentes(){
@@ -143,7 +167,7 @@ public class Cad_Tela extends AppCompatActivity {
     }
 
 
-    //S E P A R A Ç Ã O
+// <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
     public void Cad(View v){
@@ -159,7 +183,7 @@ public class Cad_Tela extends AppCompatActivity {
 
     }
 
-    public void Tlog(View v) {
+    public void Tlog() {
 
         //criando objeto intent para abrir tela de login
         Intent it_Tlog = new Intent(this, Log_tela.class);
@@ -176,6 +200,4 @@ public class Cad_Tela extends AppCompatActivity {
         startActivity(it_Tlprincipal);
 
     }
-
-
 }

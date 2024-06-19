@@ -260,7 +260,7 @@
         app:srcCompat="@drawable/chat" />
 
     <Button
-        android:id="@+id/deslogButton"
+        android:id="@+id/newSecButton"
         android:layout_width="142dp"
         android:layout_height="41dp"
         android:background="#00FFFFFF"
@@ -279,7 +279,7 @@
         app:layout_constraintTop_toTopOf="@+id/btnArea2" />
 
     <Button
-        android:id="@+id/newSecButton"
+        android:id="@+id/deslogButton"
         android:layout_width="148dp"
         android:layout_height="38dp"
         android:layout_marginTop="44dp"

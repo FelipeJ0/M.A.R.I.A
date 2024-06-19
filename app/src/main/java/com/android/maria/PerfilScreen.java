@@ -3,6 +3,8 @@ package com.android.maria;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +13,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class PerfilScreen extends AppCompatActivity {
+    private TextView nomecamp, emailcamp;
+    private Button deslogButton;
+
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +31,16 @@ public class PerfilScreen extends AppCompatActivity {
             return insets;
         });
     }
+
+    private void IniciarComponentes() {
+        nomecamp = findViewById(R.id.nomecamp);
+        emailcamp = findViewById(R.id.Emailblock);
+        deslogButton = findViewById(R.id.deslogButton);
+    }
+
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 
     public void Tlprincipal(View v) {
 
