@@ -86,32 +86,6 @@ fun ListaTarefas(navController: NavController) {
 
     ) {
 
-        /*
-        val listaTarefas: MutableList<Tarefa> = mutableListOf(
-            Tarefa(
-                tarefa = "Jogar Video games",
-                descricao = "Jogar jogos",
-                prioridade = 0
-            ),
-            Tarefa(
-                tarefa = "Ir ao cinema",
-                descricao = "Assistir filmes",
-                prioridade = 1
-            ),
-            Tarefa(
-                tarefa = "Ir para a faculdade",
-                descricao = "Estudar e aprender no processo",
-                prioridade = 2
-            ),
-            Tarefa(
-                tarefa = "Limpar a casa",
-                descricao = "Limpeza de todos os cômodos das casa",
-                prioridade = 3
-            )
-        )
-
-        */
-
         val listaTarefas = tarefasRepositorio.recuperarTarefas().collectAsState(mutableListOf()).value
 
         LazyColumn {
@@ -120,12 +94,7 @@ fun ListaTarefas(navController: NavController) {
                 TarefaItem(position = position, listaTarefas = listaTarefas, context = context, navController = navController)
             }
 
-            /*
-            itemsIndexed(listaTarefas){
-                position, _ ->
-                TarefaItem(position, listaTarefas)
-            }
-             */
+
 
 
 
