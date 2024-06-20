@@ -261,7 +261,7 @@
 
     <Button
         android:id="@+id/newSecButton"
-        android:layout_width="142dp"
+        android:layout_width="145dp"
         android:layout_height="41dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/poppins_black"
@@ -269,14 +269,15 @@
         android:scaleX="1.3"
         android:scaleY="1.3"
         android:text="Nova Seção"
-        android:textAlignment="center"
+        android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/btnArea2"
         app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintHorizontal_bias="0.381"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
-        app:layout_constraintTop_toTopOf="@+id/btnArea2" />
+        app:layout_constraintTop_toTopOf="@+id/btnArea2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/deslogButton"

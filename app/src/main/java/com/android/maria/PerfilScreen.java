@@ -66,5 +66,11 @@ public class PerfilScreen extends AppCompatActivity {
         startActivity(CScreen);
     }
 
+    public void TF(View view) {
 
+        //criando objeto intent para abrir tela de login
+        Intent it_Tf = new Intent(this, TelaListaTarefas.class);
+        //Iniciar tela de login
+        startActivity(it_Tf);
+    }
 }

@@ -87,7 +87,7 @@ public class Cad_Tela extends AppCompatActivity {
 
                     //caso tudo ocorra sem problemas, o usuário é cadastrado e será exibido uma mensagem
                     SalvarDadosUsuario();
-                    Tlog();
+                    Tlog(v);
                     Snackbar snackbar = Snackbar.make(v, mensagens[1], Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
@@ -183,7 +183,7 @@ public class Cad_Tela extends AppCompatActivity {
 
     }
 
-    public void Tlog() {
+    public void Tlog(View view) {
 
         //criando objeto intent para abrir tela de login
         Intent it_Tlog = new Intent(this, Log_tela.class);

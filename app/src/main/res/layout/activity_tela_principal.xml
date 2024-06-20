@@ -309,10 +309,10 @@
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/platContainer"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.007"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/barra_superior"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/pilares"
@@ -432,13 +432,14 @@
             android:text=" 'Aprender a Conhecer, Aprender a Fazer, Aprender a Conviver e Aprender a Ser' "
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/textRec"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.437"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.962" />
 
         <ImageView
             android:id="@+id/conhecer"
