@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -167,7 +168,7 @@ public class Cad_Tela extends AppCompatActivity {
     }
 
 
-// <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
     public void Cad(View v){
@@ -200,4 +201,14 @@ public class Cad_Tela extends AppCompatActivity {
         startActivity(it_Tlprincipal);
 
     }
+
+    public void Tlprincipal2() {
+
+        //criando objeto intent para abrir tela principal
+        Intent it_Tlprincipal = new Intent(this, Tela_Principal.class);
+        //Iniciar tela principal
+        startActivity(it_Tlprincipal);
+
+    }
+
 }

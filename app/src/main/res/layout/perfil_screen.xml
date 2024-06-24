@@ -143,35 +143,37 @@
 
     <TextView
         android:id="@+id/nomecamp"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
         android:fontFamily="@font/poppins_black"
         android:text="Usuário não logado ou cadastrado"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/emailcamp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageperf"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/emailcamp"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/poppins_black"
         android:text="Usuário não logado ou cadastrado"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/btnArea"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.919" />
+        app:layout_constraintVertical_bias="0.914" />
 
     <View
         android:id="@+id/btnArea"

@@ -50,6 +50,10 @@ public class Tela_Principal extends AppCompatActivity {
         startActivity(it_TlPerfil);
     }
 
+
+    // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
         /*calendarView = findViewById(R.id.calendarView);
         calendar = Calendar.getInstance();
 

@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Log_tela extends AppCompatActivity {
     private EditText EmailInBlock, Senhablock;
@@ -69,6 +70,17 @@ public class Log_tela extends AppCompatActivity {
 
     // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+
+    /*@Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseUser usuarioAtual = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (usuarioAtual != null) {
+            Tlprincipal2();
+        }
+    }*/
 
     private void AutenticarUsuario(View view) {
         String email = EmailInBlock.getText().toString();
@@ -138,5 +150,14 @@ public class Log_tela extends AppCompatActivity {
         Intent it_TlPerfil = new Intent(this, PerfilScreen.class);
         //Iniciar tela de login
         startActivity(it_TlPerfil);
+    }
+
+    public void Tlprincipal2() {
+
+        //criando objeto intent para abrir tela principal
+        Intent it_Tlprincipal = new Intent(this, Tela_Principal.class);
+        //Iniciar tela principal
+        startActivity(it_Tlprincipal);
+
     }
 }
