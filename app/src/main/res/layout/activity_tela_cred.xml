@@ -155,7 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium_italic"
-        android:text="Documentação"
+        android:text="Documentação/Slides"
         android:textColor="@color/white"
         android:textSize="27sp"
         app:layout_constraintBottom_toBottomOf="parent"

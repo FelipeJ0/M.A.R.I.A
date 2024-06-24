@@ -71,7 +71,7 @@ public class Log_tela extends AppCompatActivity {
     // <------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-    /*@Override
+    @Override
     protected void onStart() {
         super.onStart();
 
@@ -80,7 +80,7 @@ public class Log_tela extends AppCompatActivity {
         if (usuarioAtual != null) {
             Tlprincipal2();
         }
-    }*/
+    }
 
     private void AutenticarUsuario(View view) {
         String email = EmailInBlock.getText().toString();

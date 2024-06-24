@@ -25,22 +25,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
-        android:id="@+id/setaButton"
-        android:layout_width="46dp"
-        android:layout_height="40dp"
-        android:background="#00FFFFFF"
-        android:onClick="Tlprincipal"
-        android:scaleX="2"
-        android:scaleY="2"
-        app:layout_constraintBottom_toBottomOf="@+id/BlocoBase"
-        app:layout_constraintEnd_toEndOf="@+id/BlocoBase"
-        app:layout_constraintHorizontal_bias="0.022"
-        app:layout_constraintStart_toStartOf="@+id/BlocoBase"
-        app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.012"
-        app:srcCompat="@drawable/ic_seta" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/SenhaCamp2"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
@@ -133,12 +117,12 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/BlocoBase"
         app:layout_constraintTop_toTopOf="@+id/BlocoBase"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintVertical_bias="0.711" />
 
     <Button
         android:id="@+id/cadButton"
         android:layout_width="191dp"
-        android:layout_height="41dp"
+        android:layout_height="39dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/poppins_black"
         android:onClick="Cad"

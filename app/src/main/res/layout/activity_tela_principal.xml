@@ -11,33 +11,34 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/barra_superior"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#ff528c"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/barra_inferior"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="576dp"
-        android:background="#ff528c"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barra_superior"
-        app:layout_constraintVertical_bias="1.0" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/barra_superior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#ff528c"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/barra_inferior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="576dp"
+            android:background="#ff528c"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_superior"
+            app:layout_constraintVertical_bias="1.0" />
 
         <View
             android:id="@+id/ContRecom"
@@ -71,19 +72,19 @@
 
         <TextView
             android:id="@+id/disPlat"
-            android:layout_width="86dp"
+            android:layout_width="105dp"
             android:layout_height="20dp"
             android:fontFamily="@font/poppins_black"
             android:text="Disponível em:"
             android:textColor="@color/white"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/ContRecom"
             app:layout_constraintEnd_toEndOf="@+id/ContRecom"
-            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintHorizontal_bias="0.054"
             app:layout_constraintStart_toEndOf="@+id/recImage"
             app:layout_constraintTop_toBottomOf="@+id/recText"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.576" />
 
         <ImageView
             android:id="@+id/playIcon"
@@ -130,19 +131,19 @@
         <TextView
             android:id="@+id/recText"
             android:layout_width="238dp"
-            android:layout_height="88dp"
+            android:layout_height="95dp"
             android:fontFamily="@font/poppins_black"
             android:text="Esqueceram de Mim é recomendado para crianças por sua combinação de humor divertido, uma história emocionante e um protagonista cativante, proporcionando uma experiência cinematográfica envolvente e educativa para os espectadores mais jovens."
             android:textAlignment="textStart"
             android:textColor="@color/white"
-            android:textSize="9sp"
+            android:textSize="10sp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/ContRecom"
             app:layout_constraintEnd_toEndOf="@+id/ContRecom"
-            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintHorizontal_bias="0.303"
             app:layout_constraintStart_toEndOf="@+id/recImage"
             app:layout_constraintTop_toTopOf="@+id/ContRecom"
-            app:layout_constraintVertical_bias="0.693" />
+            app:layout_constraintVertical_bias="0.549" />
 
         <ImageView
             android:id="@+id/recImage"
@@ -188,37 +189,37 @@
             app:srcCompat="@drawable/pngwing_com" />
 
         <TextView
-        android:id="@+id/textPlat"
-        android:layout_width="264dp"
-        android:layout_height="83dp"
-        android:fontFamily="@font/poppins_black"
-        android:text=" ''Não eduques as crianças nas várias disciplinas recorrendo à força, mas como se fosse um jogo'' "
-        android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
+            android:id="@+id/textPlat"
+            android:layout_width="264dp"
+            android:layout_height="83dp"
+            android:fontFamily="@font/poppins_black"
+            android:text=" ''Não eduques as crianças nas várias disciplinas recorrendo à força, mas como se fosse um jogo'' "
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.166" />
 
-    <TextView
-        android:id="@+id/platName"
-        android:layout_width="215dp"
-        android:layout_height="20dp"
-        android:fontFamily="@font/poppins_black"
-        android:text="-Platão"
-        android:textColor="@color/white"
-        android:textSize="13sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
+        <TextView
+            android:id="@+id/platName"
+            android:layout_width="215dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/poppins_black"
+            android:text="-Platão"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.632"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.239" />
 
         <ImageButton
             android:id="@+id/botao_perfil"
@@ -284,18 +285,18 @@
             app:srcCompat="@drawable/logo_maria_4k" />
 
         <ImageButton
-        android:id="@+id/botao_inutil"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toBottomOf="@+id/barra_superior"
-        app:layout_constraintEnd_toEndOf="@+id/barra_superior"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="@+id/barra_superior"
-        app:layout_constraintTop_toTopOf="@+id/barra_superior"
-        app:layout_constraintVertical_bias="0.47"
-        app:srcCompat="@drawable/burger_bar__1_" />
+            android:id="@+id/botao_inutil"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitStart"
+            app:layout_constraintBottom_toBottomOf="@+id/barra_superior"
+            app:layout_constraintEnd_toEndOf="@+id/barra_superior"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="@+id/barra_superior"
+            app:layout_constraintTop_toTopOf="@+id/barra_superior"
+            app:layout_constraintVertical_bias="0.47"
+            app:srcCompat="@drawable/burger_bar__1_" />
 
         <TextView
             android:id="@+id/eduCP"
@@ -456,19 +457,19 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="80dp"
+            android:layout_width="70dp"
             android:layout_height="65dp"
             app:layout_constraintBottom_toTopOf="@+id/tipText2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintHorizontal_bias="0.527"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tipText1"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/pngegg" />
 
         <TextView
             android:id="@+id/tipText1"
-            android:layout_width="160dp"
+            android:layout_width="150dp"
             android:layout_height="23dp"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/poppins_black"
@@ -479,14 +480,14 @@
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintHorizontal_bias="0.54"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ContRecom"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.067" />
 
         <TextView
             android:id="@+id/tipText2"
-            android:layout_width="170dp"
+            android:layout_width="165dp"
             android:layout_height="23dp"
             android:fontFamily="@font/poppins_black"
             android:text="'é um filho bem educado' "
