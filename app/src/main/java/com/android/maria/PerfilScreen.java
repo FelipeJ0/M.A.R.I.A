@@ -113,7 +113,7 @@ public class PerfilScreen extends AppCompatActivity {
 
     public void TF(View view) {
 
-        //criando objeto intent para abrir tela de login
+        //criando objeto intent para abrir tela de tarefas
         Intent it_Tf = new Intent(this, TelaListaTarefas.class);
         //Iniciar tela de login
         startActivity(it_Tf);
@@ -127,4 +127,15 @@ public class PerfilScreen extends AppCompatActivity {
         startActivity(it_Tlog);
 
     }
+
+    public void TSC(View view) {
+
+        //criando objeto intent para abrir tela de dicas
+        Intent it_TSC = new Intent(this, tip_screen.class);
+        //Iniciar tela de login
+        startActivity(it_TSC);
+
+    }
+
+
 }
